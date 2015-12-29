@@ -15,23 +15,192 @@
 /* General styles
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
+body {
+    font-family: 'Fanwood Text', serif;
+}
 
+ul {
+    list-style: none;
+}
 
 /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
-
-
+.top-navigation {
+    background-color: #1c2133;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 1rem 0;
+}
+.top-navigation .links {
+    float: right;
+    color: #dfdbed;
+    font-size: 1rem;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.5rem;
+    padding: 0 2rem;
+}
 /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
+.introduction {
+    background-image: url("../image-assets/mountain2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46rem;
+    overflow: auto;
+}
 
+.introduction .logo {
+    height: 25%;
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.introduction h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0.5px black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.introduction p {
+    text-align: center;
+    color: #C0C0C0;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    padding: 0 8rem;
+}
+
+.introduction .buttons {
+    text-align: center;
+}
+
+button {
+    width: 9.688rem;
+    background-color: #ebbb18;
+    border-color: #ebbb18;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: #4c4559;
+    font-size: 1.125rem;
+}
+
+.works {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #1c2133;
+}
+
+.works h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.works .projects li {
+    display: inline-block;
+    padding: 2rem 3rem;
+}
+
+.works img {
+    width: 16rem;
+    border: 0.5em solid #1c2133;
+}
 
 /* Footer styles
     (all the styles inside the < footer > tag)
 */
+.social {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px dotted #C0C0C0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
 
+.social h4 {
+    color: #1c2133;
+}
 
+.social .icons > li {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    padding: 0 0.6rem;
+}
+
+.social img {
+    height: 2.5rem;
+    width: auto;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F77A52;
+}
+
+footer a:hover {
+    color: #2F343B;
+}
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
 /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
+@media only screen and (max-width: 1170px) {
+.works .projects li {
+    display: block;
+ }
+}
+
+@media only screen and (max-width: 950px) {
+    .introduction p {
+        padding: 0 4rem;  
+    }
+}
+
+@media only screen and (max-width: 500px) {
+.introduction {
+    text-align: center;
+ }    
+.introduction .logo {
+    height: 18%;
+    margin-top: 5rem;
+    margin-left: 0rem;
+ }
+.introduction h1 {
+    font-size: 3rem;
+    padding-top: 0rem;
+    padding-bottom:1.5rem;
+    padding-right: 1rem;
+    padding-left:1rem;
+ }
+ .works h2 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+ }
+}
+
+
