@@ -19,6 +19,8 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
@@ -27,10 +29,7 @@ ul {
 
 section,
 footer {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -69,7 +68,10 @@ header > .intro-header h2 {
     margin-bottom: 2rem;
 }
 
-button {
+#contact-button {
+    width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
     background: #cc3391;
     background-image: -webkit-linear-gradient(top, #cc3391, #b31265);
     background-image: -moz-linear-gradient(top, #cc3391, #b31265);
@@ -80,12 +82,18 @@ button {
     -moz-border-radius: 8;
     border-radius: 8px;
     color: #ffffff;
-    padding: 10px 40px 10px 40px;
     text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-button:hover {
+#contact-button a {
     text-decoration: none;
+    color: #ffffff;
+    padding: 10px 40px 10px 40px;
+}
+
+#contact-button a:hover {
     font-weight: 700;
 }
 
@@ -94,10 +102,12 @@ button:hover {
     (all the styles inside the < sections > or < aside > tags)
 */
 
-section.portfolio h2 {
-    margin-bottom: 2rem;
+section.portfolio h2,
+section.skills h2 {
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 300;
+    padding-top: 1.5rem;
 }
 
 section .projects {
@@ -110,20 +120,52 @@ section .projects li {
     padding-left: 0.5rem;
 }
 
-section .projects li img {
+section.portfolio .projects a {
+    text-decoration: none;
+    border: 1px solid white;
+    display: block;
+}
+
+section.portfolio .projects a:hover {
+    border: 1px solid red;
+}
+
+section.portfolio .projects li img {
     height: 15rem;
     border: 1px solid #d8d8d8;
 }
 
-section .resume-link {
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
+section.skills {
     background-color: #f1f1f1;
-    font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
 }
 
-section .resume-link a {
+section.skills li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+section.skills li i {
+    font-size: 8rem;
+    color: #225563;
+}
+
+section.skills .resume-link {
+    width: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d8d8d8;
+    font-size: 1.3rem;
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+section.skills .resume-link a {
     text-decoration: none;
 }
 
@@ -133,17 +175,20 @@ section .resume-link a {
 */
 
 footer.social {
-    background-color: #f1f1f1;
+    background-color: #d8d8d8;
     width: 100%;
     height: 100%;
-    padding-bottom: 3rem;
 }
 
 hr.style {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 2rem 0;
+}
+
+footer .content .social-text {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .social .icons {
