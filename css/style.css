@@ -29,7 +29,7 @@ ul {
 
 section,
 footer {
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -107,32 +107,60 @@ section.skills h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 300;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 
-section .projects {
-    margin-bottom: 3rem;
-}
-
-section .projects li {
-    display: inline-block;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
-
-section.portfolio .projects a {
-    text-decoration: none;
-    border: 1px solid white;
-    display: block;
-}
-
-section.portfolio .projects a:hover {
-    border: 1px solid red;
-}
-
-section.portfolio .projects li img {
+section.portfolio .projects li {
     height: 15rem;
+    width: 15rem;
     border: 1px solid #d8d8d8;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+section.portfolio .projects .youtube,
+section.portfolio .projects .youtube:hover,
+section.portfolio .projects .shopping,
+section.portfolio .projects .shopping:hover,
+section.portfolio .projects .quiz,
+section.portfolio .projects .quiz:hover,
+section.portfolio .projects .recipe,
+section.portfolio .projects .recipe:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.portfolio .projects .youtube {
+    background-image: url(../image-assets/Pro-youtubeAPI.png);
+}
+
+section.portfolio .projects .youtube:hover {
+    background-image: url(../image-assets/hover-youtube.png);
+}
+
+section.portfolio .projects .shopping {
+    background-image: url(../image-assets/Pro-shoppingList.png);
+}
+
+section.portfolio .projects .shopping:hover {
+    background-image: url(../image-assets/hover-shop.png);
+}
+
+section.portfolio .projects .quiz {
+    background-image: url(../image-assets/Pro-quizApp.png);
+}
+
+section.portfolio .projects .quiz:hover {
+    background-image: url(../image-assets/hover-quiz.png);
+}
+
+section.portfolio .projects .recipe {
+    background-image: url(../image-assets/Pro-recipeSearchApp.png);
+}
+
+section.portfolio .projects .recipe:hover {
+    background-image: url(../image-assets/hover-recipe.png);
 }
 
 section.skills {
@@ -143,8 +171,10 @@ section.skills {
 }
 
 section.skills li {
+    display: inline-block;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 3rem;
 }
 
 section.skills li i {
@@ -167,6 +197,7 @@ section.skills .resume-link {
 
 section.skills .resume-link a {
     text-decoration: none;
+    color: black;
 }
 
 
