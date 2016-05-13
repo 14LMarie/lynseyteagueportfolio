@@ -29,7 +29,33 @@ ul {
 
 section,
 footer {
+    padding-top: 2rem;
+}
+
+section {
     padding-bottom: 4rem;
+}
+
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    background: #cc3391;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0px 3px 12px #4A273C;
+}
+
+button:hover {
+    background: #C30D7B;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 
@@ -48,53 +74,25 @@ header.introduction {
 }
 
 header .logo {
-    width: 10%;
-    float: left;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    width: 170px;
+    margin-top: 3rem;
 }
 
 header h1 {
     font-family: 'Oswald', sans-serif;
     text-shadow: 2px 2px #45454B;
-    font-size: 3rem;
-    margin-top: 14rem;
+    font-size: 2.6rem;
+    margin-top: 4rem;
 }
 
 header > .intro-header h2 {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1.5rem;
-    margin-top: -2rem;
     margin-bottom: 2rem;
 }
 
-#contact-button {
-    width: 13rem;
-    margin-left: auto;
-    margin-right: auto;
-    background: #cc3391;
-    background-image: -webkit-linear-gradient(top, #cc3391, #b31265);
-    background-image: -moz-linear-gradient(top, #cc3391, #b31265);
-    background-image: -ms-linear-gradient(top, #cc3391, #b31265);
-    background-image: -o-linear-gradient(top, #cc3391, #b31265);
-    background-image: linear-gradient(to bottom, #cc3391, #b31265);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    color: #ffffff;
-    text-decoration: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-#contact-button a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 40px 10px 40px;
-}
-
-#contact-button a:hover {
-    font-weight: 700;
+.introduction button {
+    margin-top: 5rem;
 }
 
 
@@ -103,101 +101,68 @@ header > .intro-header h2 {
 */
 
 section.portfolio h2,
-section.skills h2 {
+section.skills h2,
+footer.social h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 700;
     padding-top: 2rem;
 }
 
-section.portfolio .projects li {
-    height: 15rem;
-    width: 15rem;
-    border: 1px solid #d8d8d8;
-    display: inline-block;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+h3 a {
+    color: black;
 }
 
-section.portfolio .projects .youtube,
-section.portfolio .projects .youtube:hover,
-section.portfolio .projects .shopping,
-section.portfolio .projects .shopping:hover,
-section.portfolio .projects .quiz,
-section.portfolio .projects .quiz:hover,
-section.portfolio .projects .recipe,
-section.portfolio .projects .recipe:hover {
-    background-repeat: no-repeat;
-    background-size: cover;
+h3 a:hover {
+    color: #333333;
+    text-decoration: none;
 }
 
-section.portfolio .projects .youtube {
-    background-image: url(../image-assets/Pro-youtubeAPI.png);
+section.portfolio img {
+    width: 90%;
+    box-shadow: 0px 6px 12px #C3C2C2;
+    margin: 1.2rem 0;
 }
 
-section.portfolio .projects .youtube:hover {
-    background-image: url(../image-assets/hover-youtube.png);
+section.portfolio p {
+    text-align: justify;
 }
 
-section.portfolio .projects .shopping {
-    background-image: url(../image-assets/Pro-shoppingList.png);
+section.portfolio li {
+    display: inline;
+    padding: 0 0.5rem;
 }
 
-section.portfolio .projects .shopping:hover {
-    background-image: url(../image-assets/hover-shop.png);
+section.portfolio li a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #cc3391;
 }
 
-section.portfolio .projects .quiz {
-    background-image: url(../image-assets/Pro-quizApp.png);
-}
-
-section.portfolio .projects .quiz:hover {
-    background-image: url(../image-assets/hover-quiz.png);
-}
-
-section.portfolio .projects .recipe {
-    background-image: url(../image-assets/Pro-recipeSearchApp.png);
-}
-
-section.portfolio .projects .recipe:hover {
-    background-image: url(../image-assets/hover-recipe.png);
+section.portfolio li a:hover {
+    color: #C30D7B;
 }
 
 section.skills {
     background-color: #f1f1f1;
     width: 100%;
     height: 100%;
-    padding-bottom: 3rem;
 }
 
-section.skills li {
+section.skills .icons li {
     display: inline-block;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
+    margin: 0 0.5rem;
+    font-size: 4rem;
+    color: #01416B;
 }
 
-section.skills li i {
-    font-size: 8rem;
-    color: #225563;
-}
-
-section.skills .resume-link {
-    width: 8rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #d8d8d8;
+section.skills .keywords {
+    text-align: center;
     font-size: 1.3rem;
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
 }
 
-section.skills .resume-link a {
-    text-decoration: none;
-    color: black;
+section.skills .keywords li {
+    display: block;
 }
 
 
@@ -206,34 +171,39 @@ section.skills .resume-link a {
 */
 
 footer.social {
-    background-color: #d8d8d8;
+    background-color: #333333;
+    color: white;
     width: 100%;
     height: 100%;
 }
 
-hr.style {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-footer .content .social-text {
-    padding-top: 1.5rem;
+footer .social-text {
+    padding-top: 3rem;
     font-size: 1.3rem;
 }
 
-.social .icons {
-    list-style-type: none;
+footer .social-text a {
+    text-decoration: none;
+    color: #cc3391;
+}
+
+footer .social-text a:hover {
+    color: #C30D7B;
 }
 
 .social .icons li {
     display: inline-block;
 }
 
-.social .icons img {
-    width: 45px;
+.social .icons li a {
+    font-size: 2.8rem;
+    color: white;
     text-decoration: none;
-    margin: 1rem .2rem;
+    margin: 0rem 0.8rem;
+}
+
+.social .icons li a:hover {
+    color: #C30D7B;
 }
 
 footer .content > p {
@@ -246,8 +216,17 @@ footer p a {
     font-weight: 700;
 }
 
+footer .credits {
+    margin-top: 1rem;
+}
+
 footer .credits > p {
     color: #909090;
+    margin: -0.2rem 0;
+}
+
+footer #contactForm {
+    text-align: left;
 }
 
 

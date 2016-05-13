@@ -3,19 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <!--
-        Mobile browsers like Fennec render pages in a virtual "window" (the viewport), usually wider than the screen, so they don't need to squeeze every page layout into a tiny window (which would break many non-mobile-optimized sites). Users can pan and zoom to see different areas of the page.
-        Mobile Safari introduced the "viewport meta tag" to let web developers control the viewport's size and scale. Many other mobile browsers now support this tag, although it is not part of any web standard.
-    -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Lynsey Teague: Frontend Developer</title>
     <meta name="description" content="Lynsey Teague's Portfolio">
     <meta name="author" content="Lynsey Teague">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
@@ -27,37 +29,147 @@
             <h1>LYNSEY MARIE TEAGUE</h1>
             <h2>Frontend Developer</h2>
         </div>
-        <div id="contact-button"><a href="mailto:lynsey.teague@yahoo.com">CONTACT ME</a></div>
+        <div>
+            <button type="button" onClick="document.getElementById('contact').scrollIntoView();">CONTACT ME</button>
+        </div>
     </header>
 
     <section class="portfolio">
-        <div class="content">
-            <h2>Portfolio</h2>
-            <ul class="projects">
-                <li class="youtube" onclick="location.href='https://github.com/14LMarie/youtube.git';" style="cursor: pointer;">
-                    <!--<a href="https://github.com/14LMarie/youtube.git" target='_blank'><img src="image-assets/Pro-youtubeAPI.png" alt="youtube API image"></a>
-                    -->
-                </li>
-                <li class="shopping" onclick="location.href='https://github.com/14LMarie/shoppingcart.git';" style="cursor: pointer;">
-                    <!-- <a href="https://github.com/14LMarie/shoppingcart.git" target='_blank'><img src="image-assets/Pro-shoppingList.png" alt="shopping list image"></a>
-                    -->
-                </li>
-                <li class="quiz" onclick="location.href='https://github.com/14LMarie/quiz.git';" style="cursor: pointer;">
-                    <!-- <a href="https://github.com/14LMarie/quiz.git" target='_blank'><img src="image-assets/Pro-quizApp.png" alt="quiz image"></a>
-                    -->
-                </li>
-                <li class="recipe" onclick="location.href='https://github.com/14LMarie/recipe-search-api.git';" style="cursor: pointer;">
-                    <!--<a href="https://github.com/14LMarie/recipe-search-api.git" target='_blank'><img src="image-assets/Pro-recipeSearchApp.png" alt="recipe search app image"></a>
-                    -->
-                </li>
-            </ul>
+        <h2>Portfolio</h2>
+
+        <div class="container" id="singleProject">
+            <div class="row">
+
+                <a href="http://14lmarie.github.io/thinkful-quiz-app" target="_blank">
+                    <div class="col-md-8">
+                        <img src="/image-assets/quiz.png" alt="projectImage">
+                    </div>
+                </a>
+                <div class="col-md-4">
+                    <h3><a href="https://github.com/14LMarie/thinkful-quiz-app.git" target="_blank">Quiz App</a></h3>
+                    <p id="projectDescription">This application will test your knowledge of the best city in the south, Charlotte. Displays my understanding of how to work with objects, prototypical inheritance, and how to use it. Also demonstrates my ability to use objects to model real world processes. Environment: HTML, CSS, JavaScript and jQuery. Click below on the github icon to review code or the pulse icon for a live preview of the application.</p>
+                    <ul>
+                        <li>
+                            <a class="ionicons ion-ios-pulse-strong" href="http://14lmarie.github.io/thinkful-quiz-app" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="ionicons ion-social-github" href="https://github.com/14LMarie/thinkful-quiz-app.git" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" id="singleProject">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h3><a href="https://github.com/14LMarie/thinkful-youtube-api.git" target="_blank">Youtube API</a></h3>
+                    <p id="projectDescription">Simple search form that allows the user to search youtube videos. Demonstrates my ability to use API data on a website, manipulate the DOM and debug javascript. Environment: HTML, CSS, JavaScript, jQuery, and AJAX. Click below on the github icon to review code or the pulse icon for a live preview of the application.</p>
+                    <ul>
+                        <li>
+                            <a class="ionicons ion-ios-pulse-strong" href="http://14lmarie.github.io/thinkful-youtube-api" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="ionicons ion-social-github" href="https://github.com/14LMarie/thinkful-youtube-api.git" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="http://14lmarie.github.io/thinkful-youtube-api" target="_blank">
+                    <div class="col-md-8">
+                        <img src="/image-assets/youtube.png" alt="projectImage">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container" id="singleProject">
+            <div class="row">
+
+                <a href="http://14lmarie.github.io/thinkful-recipe-search-api" target="_blank">
+                    <div class="col-md-8">
+                        <img src="/image-assets/recipe.png" alt="projectImage">
+                    </div>
+                </a>
+                <div class="col-md-4">
+                    <h3><a href="https://github.com/14LMarie/thinkful-recipe-search-api.git" target="_blank">Recipe Search App</a></h3>
+                    <p id="projectDescription">Allows the user to search recipes based on ingredients, and cuisine. Demonstrates experience researching RESTful APIs and designing client-side applications to interface with them. Environment: HTML, CSS, JavaScript and jQuery. Click below on the github icon to review code or the pulse icon for a live preview of the application.</p>
+                    <ul>
+                        <li>
+                            <a class="ionicons ion-ios-pulse-strong" href="http://14lmarie.github.io/thinkful-recipe-search-api" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="ionicons ion-social-github" href="https://github.com/14LMarie/thinkful-recipe-search-api.git" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container" id="singleProject">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><a href="https://github.com/14LMarie/thinkful-countries-app.git" target="_blank">Countries and Capitals</a></h3>
+                    <p id="projectDescription">Angularjs application that can be a great tool for any geography student. I integrated the geonames API to pull data about all the countries in the world and specific information about each country. This project demonstrates my understanding of routes, services, animation, promises and XHR requests. Karma and Jasmine were employed for unit testing. Enivornment: HTML, CSS, JavaScript, JQuery, Angularjs, Nodejs (npm), Gulp, Karma, and Jasmine. Click below on the github icon to review code or the pulse icon for a live preview of the application.</p>
+                    <ul>
+                        <li>
+                            <a class="ionicons ion-ios-pulse-strong" href="https://github.com/14LMarie/thinkful-countries-app.git" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="ionicons ion-social-github" href="https://github.com/14LMarie/thinkful-countries-app.git" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://github.com/14LMarie/thinkful-countries-app.git" target="_blank">
+                    <div class="col-md-8">
+                        <img src="/image-assets/countries.png" alt="projectImage">
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
+
     <section class="skills">
-        <div class="content">
-            <h2>Skills</h2>
-            <ul>
+        <h2>Skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <ul class="keywords">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4">
+                    <ul class="keywords">
+                        <li>Git</li>
+                        <li>Gulp</li>
+                        <li>Nodejs</li>
+                        <li>Karma</li>
+                        <li>Jasmine</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-4">
+                    <ul class="keywords">
+                        <li>Bootstrap</li>
+                        <li>SASS</li>
+                        <li>APIs</li>
+                        <li>UX/UI</li>
+                        <li>Adobe CC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="icons">
                 <li>
                     <i class="ionicons ion-social-html5-outline"></i>
 
@@ -74,51 +186,106 @@
                     <i class="ionicons ion-social-javascript-outline"></i>
 
                 </li>
+                <li>
+                    <i class="ion-social-angular-outline"></i>
+
+                </li>
             </ul>
         </div>
-        <div class="resume-link"><a href="documents/Lynsey-Teague-2016.pdf" target="_blank">RESUME</a></div>
     </section>
 
 
-    <footer class="social">
-        <div class="content">
-            <hr class="style">
-            <p class="social-text">Join me on social media!
-                <br>Check out my creative endeavors on Behance!</p>
-            <ul class="icons">
-                <li>
-                    <a href="https://www.linkedin.com/pub/lynsey-teague/63/145/250">
-                        <img src="image-assets/square-linkedin.png" alt="LinkedIn Image">
-                    </a>
-                </li>
+    <footer id="contact" class="social">
+        <h2>Contact Me</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="social-text">I look forward to speaking with you about personal or commercial projects. Check out my
+                        <a href="https://www.behance.net/lynseymteaa196" target="_blank">creative endeavors</a> on Behance and join me on social media!</p>
+                    <ul class="icons">
+                        <li>
+                            <a class="fa fa-linkedin" href="https://www.linkedin.com/pub/lynsey-teague/63/145/250" target="_blank"></a>
+                        </li>
 
-                <li>
-                    <a href="https://www.behance.net/lynseymteaa196">
-                        <img src="image-assets/square-behance.png" alt="Behance Image">
-                    </a>
-                </li>
+                        <li>
+                            <a class="fa fa-github-alt" href="https://github.com/14LMarie" target="_blank"></a>
+                        </li>
 
-                <li>
-                    <a href="https://github.com/14LMarie">
-                        <img src="image-assets/square-git.png" alt="Github Image">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:lynsey.teague@yahoo.com">
-                        <img src="image-assets/square-mail.png" alt="Email Image">
-                    </a>
-                </li>
-            </ul>
+                        <li>
+                            <a class="fa fa-behance" href="https://www.behance.net/lynseymteaa196" target="_blank"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div id="contactForm" class="col-sm-6">
+                    <div id="wufoo-z1n3ye7x0wdo115">
+                        Fill out my <a href="https://14lmarie.wufoo.com/forms/z1n3ye7x0wdo115">online form</a>.
+                    </div>
+                    <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/partners/">Wufoo integrations</a> and get your data to your favorite apps.</div>
+                    <script type="text/javascript">
+                        var z1n3ye7x0wdo115;
+                        (function (d, t) {
+                            var s = d.createElement(t),
+                                options = {
+                                    'userName': '14lmarie',
+                                    'formHash': 'z1n3ye7x0wdo115',
+                                    'autoResize': true,
+                                    'height': '497',
+                                    'async': true,
+                                    'host': 'wufoo.com',
+                                    'header': 'show',
+                                    'ssl': true
+                                };
+                            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                            s.onload = s.onreadystatechange = function () {
+                                var rs = this.readyState;
+                                if (rs)
+                                    if (rs != 'complete')
+                                        if (rs != 'loaded') return;
+                                try {
+                                    z1n3ye7x0wdo115 = new WufooForm();
+                                    z1n3ye7x0wdo115.initialize(options);
+                                    z1n3ye7x0wdo115.display();
+                                } catch (e) {}
+                            };
+                            var scr = d.getElementsByTagName(t)[0],
+                                par = scr.parentNode;
+                            par.insertBefore(s, scr);
+                        })(document, 'script');
+                    </script>
+
+
+                    <!--  <form role="form">
+                        <div class="form-group">
+                            <label for="usr">Name:</label>
+                            <input type="password" class="form-control" id="usr" placeholder="Enter Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Message:</label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Leave me a message"></textarea>
+                        </div>
+
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div> -->
+                </div>
+            </div>
+
             <div class="credits">
                 <p>Cover Image via <a href="http://unsplash.com">Unsplash</a> </p>
                 <p class="copy">
                     © Lynsey Marie Teague
                 </p>
             </div>
-        </div>
     </footer>
 
-    <script src='https://code.jquery.com/jquery-1.11.3.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script src="apps/app.js" type=application/javascript></script>
 </body>
 
